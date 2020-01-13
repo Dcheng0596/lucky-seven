@@ -1,0 +1,50 @@
+<!DOCTYPE html lang="en">
+<head>
+    <title>Lucky Seven</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h2 class="display-1 text-center m-5">Lucky Seven</h2>
+    <div class="start-bet container needs-validation">
+        <div class="d-flex justify-content-center">
+            <label class="display-4 " for="bet">Starting Bet:</label>
+            <input class="w-25 align-self-center mx-5" type="number" name="bet" id="bet" required>
+        </div>
+            <button class="btn btn-dark btn-lg mx-auto my-5 d-flex" type="button" onclick="play()">Play</button>
+    </div>
+    <div class="container text-center">
+        <div class="row mt-5">
+            <div class="col text-right">
+                <h2 id="starting-bet"></h2>
+            </div>
+            <div class="col">
+                <h2 id="bet-value"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-right">
+                <h2 id="total-rolls"></h2>
+            </div>
+            <div class="col">
+                <h2 id="num-rolls"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-right">
+                <h2 id="high-amount"></h2>
+            </div>
+            <div class="col">
+                <h2 id="amount"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-right">
+                <h2 id="high-rolls"></h2>
+            </div>
+            <div class="col">
+                <h2 id="num-high-rolls"></h2>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/play.js"></script>
+</body>
