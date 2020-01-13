@@ -13,14 +13,14 @@ function rollDice(numSides) {
 
 const play = function(event) {
     if(isValidBet(event)) {
-        var bet = document.getElementById('bet').value;
+        var bet = Number(document.getElementById('bet').value);
         var numRolls = 0;
         var maxMoney = bet;
         var maxMoneyRoll = 0;
 
         while(bet > 0) {
-            var roll1= rollDice(6);
-            var roll2= rollDice(6);
+            var roll1 = rollDice(6);
+            var roll2 = rollDice(6);
 
             if(roll1 + roll2 === 7) {
                 bet+=4;
